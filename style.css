@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fundo0.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.link {
+    background-color: rgba(255, 254, 254, 0.579);
+    color: rgb(0, 0, 0);
+}
+
+.link a:link,
+.link a:visited,
+.link a:hover,
+.link a:active {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .menu li {
+        float: none;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .conteudo {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+.p0 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.p1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p15 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.p3 {
+    margin: 10px auto 30px auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    max-width: 90%;
+    text-align: justify;
+}
+
+.p4 {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    background-color: #111111;
+}
+
+ul.submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    display: none;
+    min-width: 160px;
+    z-index: 999;
+    flex-direction: column;
+}
+
+.submenu li a {
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background-color: #cccccc;
+}
+
+.menu li:hover > ul.submenu {
+    display: flex;
+    flex-direction: column;
+}

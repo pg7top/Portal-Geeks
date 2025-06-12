@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Portal Geeks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        h1, h2, h3, p, label {
+            color: #fff;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: white;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ENTRE EM CONTATO, TIRE SUAS DÚVIDAS</h1>
+        <p>Queremos ouvir e falar com você, saber quais são suas dúvidas e responder todas suas perguntas sobre nosso site.</p>
+
+        <div class="section">
+            <h2>ATENDIMENTO</h2>
+            <p>
+                Entre em contato por telefone, e-mail, ou se preferir, venha nos visitar.<br>
+                Segunda à Sábado das 9h30 às 17h30<br>
+                (11) 1234-5678<br>
+                (11) 98765-4321 (whats)<br>
+                contato@portalgeeks.com.br<br>
+                Rua Geek, 1100 - Vila dos Portais - Brasil - BR
+            </p>
+        </div>
+
+        <form>
+            <div class="section">
+                <h2>Criar sua Conta do PortalGeeks</h2>
+
+                <label>Nome</label>
+                <input type="text" name="nome" required>
+
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" required>
+
+                <label>Nome de usuário</label>
+                <input type="text" name="usuario" required> @portalgeeks.com.br
+
+                <label>Senha</label>
+                <input type="password" name="senha" required>
+
+                <label>Confirmar Senha</label>
+                <input type="password" name="confirma_senha" required>
+            </div>
+
+            <div class="section">
+                <h3>Informações pessoais</h3>
+
+                <label>Telefone</label>
+                <input type="tel" name="telefone">
+
+                <label>Gênero</label><br>
+                <input type="radio" name="genero" value="masculino"> Masculino
+                <input type="radio" name="genero" value="feminino"> Feminino<br><br>
+
+                <label>Data de Nascimento</label>
+                <input type="date" name="nascimento">
+            </div>
+
+            <div class="section">
+                <h3>Informações complementares</h3>
+
+                <label>Escolha seus estilos de games preferidos</label><br>
+                <input type="checkbox" name="estilo" value="acao"> Ação
+                <input type="checkbox" name="estilo" value="aventura"> Aventura
+                <input type="checkbox" name="estilo" value="estrategia"> Estratégia
+                <input type="checkbox" name="estilo" value="rpg"> RPG
+                <input type="checkbox" name="estilo" value="esporte"> Esporte
+                <input type="checkbox" name="estilo" value="corrida"> Corrida
+                <input type="checkbox" name="estilo" value="outro"> Outro
+                <br><br>
+
+                <label>Imagem do seu jogo preferido</label>
+                <input type="file" name="imagem">
+
+                <label>Selecione sua plataforma preferida</label>
+                <select name="plataforma">
+                    <option value="PS4">PS4</option>
+                    <option value="PS5">PS5</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="PC">PC</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="5"></textarea>
+
+                <input type="checkbox" name="propaganda"> Aceito receber propagandas de jogos por email
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <a href="index.html">Voltar para a página inicial</a>
+    </div>
+</body>
+</html>
